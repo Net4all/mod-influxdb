@@ -80,7 +80,7 @@ class InfluxdbBroker(BaseModule):
 
         self.db = InfluxDBClient(
             self.host, self.port, self.user, self.password, self.database,
-            ssl=self.use_https, verify_ssl=self.verify_ssl, 
+            ssl=self.use_https, verify_ssl=self.verify_ssl,
             use_udp=self.use_udp, udp_port=self.udp_port, timeout=None
         )
 
